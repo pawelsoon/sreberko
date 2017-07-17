@@ -1,1 +1,3 @@
 Baw sie dobrze
+
+ZMIANA
