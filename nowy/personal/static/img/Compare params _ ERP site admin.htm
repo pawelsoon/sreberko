@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:8000/admin/service/product/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Compare params | ERP site admin</title>
+<link rel="stylesheet" type="text/css" href="./Compare params _ ERP site admin_files/base.css">
+
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/static/admin/css/ie.css" /><![endif]-->
+
+<script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+<script type="text/javascript">window.__admin_utc_offset__ = "7200";</script>
+
+    <script src="./Compare params _ ERP site admin_files/jquery-3.1.1.min.js"></script>
+    <script src="./Compare params _ ERP site admin_files/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Compare params _ ERP site admin_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Compare params _ ERP site admin_files/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="./Compare params _ ERP site admin_files/bootstrap-table.js"></script>
+    <link rel="stylesheet" href="./Compare params _ ERP site admin_files/bootstrap-table.css">
+    <link rel="stylesheet" href="./Compare params _ ERP site admin_files/compare_products.css">
+    <script>
+/*        $(document).ready(function () {
+            var $compare_table = $('#compare_table');
+            $compare_table.bootstrapTable({
+                data: [{'value_1': '1', 'param': 'AHRS_GPS_GAIN', 'value_2': '0.7'}, {'value_1': '0.2', 'param': 'AHRS_RP_P', 'value_2': '0.1'}, {'value_1': '-0.008072854', 'param': 'AHRS_TRIM_X', 'value_2': '0.01888398'}, {'value_1': '0.02213349', 'param': 'AHRS_TRIM_Y', 'value_2': '-0.0230498'}, {'value_1': '1', 'param': 'ARMING_CHECK', 'value_2': '0'}, {'value_1': '110000', 'param': 'ATC_ACCEL_P_MAX', 'value_2': '36000'}, {'value_1': '110000', 'param': 'ATC_ACCEL_R_MAX', 'value_2': '37031.61'}, {'value_1': '27000', 'param': 'ATC_ACCEL_Y_MAX', 'value_2': '13973.37'}, {'value_1': '-', 'param': 'ATC_ANGLE_BOOST', 'value_2': '1'}, {'value_1': '-1', 'param': 'BATT2_CURR_PIN', 'value_2': '3'}, {'value_1': '-1', 'param': 'BATT2_VOLT_PIN', 'value_2': '2'}, {'value_1': '18.0018', 'param': 'BATT_AMP_PERVOLT', 'value_2': '54.64481'}, {'value_1': '21000', 'param': 'BATT_CAPACITY', 'value_2': '20000'}, {'value_1': '3', 'param': 'BATT_MONITOR', 'value_2': '4'}, {'value_1': '10.13064', 'param': 'BATT_VOLT_MULT', 'value_2': '15.70105'}, {'value_1': '5', 'param': 'CAM_DURATION', 'value_2': '3'}, {'value_1': '2000', 'param': 'CAM_SERVO_ON', 'value_2': '2100'}, {'value_1': '0', 'param': 'CAM_TRIGG_DIST', 'value_2': '20'}, {'value_1': '0', 'param': 'CAM_TRIGG_TYPE', 'value_2': '1'}, {'value_1': '0', 'param': 'CH7_OPT', 'value_2': '29'}, {'value_1': '29', 'param': 'CH8_OPT', 'value_2': '0'}, {'value_1': '0', 'param': 'COMPASS_DEC', 'value_2': '0.06950384'}, {'value_1': '-30', 'param': 'COMPASS_OFS2_X', 'value_2': '59'}, {'value_1': '231', 'param': 'COMPASS_OFS2_Y', 'value_2': '304'}, {'value_1': '264', 'param': 'COMPASS_OFS2_Z', 'value_2': '16'}, {'value_1': '-122.9823', 'param': 'COMPASS_OFS_X', 'value_2': '-97'}, {'value_1': '20.06117', 'param': 'COMPASS_OFS_Y', 'value_2': '0'}, {'value_1': '22.19551', 'param': 'COMPASS_OFS_Z', 'value_2': '2'}, {'value_1': '2', 'param': 'FLTMODE2', 'value_2': '3'}, {'value_1': '3', 'param': 'FLTMODE3', 'value_2': '2'}, {'value_1': '0', 'param': 'FLTMODE4', 'value_2': '5'}, {'value_1': '5', 'param': 'FLTMODE5', 'value_2': '0'}, {'value_1': '0', 'param': 'FS_BATT_ENABLE', 'value_2': '2'}, {'value_1': '0', 'param': 'FS_BATT_VOLTAGE', 'value_2': '20.8'}, {'value_1': '1', 'param': 'FS_THR_ENABLE', 'value_2': '2'}, {'value_1': '99112.73', 'param': 'GND_ABS_PRESS', 'value_2': '97360.65'}, {'value_1': '29.84889', 'param': 'GND_TEMP', 'value_2': '13.48403'}, {'value_1': '0.3480362', 'param': 'INS_ACC2OFFS_X', 'value_2': '0.2435373'}, {'value_1': '0.01635239', 'param': 'INS_ACC2OFFS_Y', 'value_2': '-0.0302492'}, {'value_1': '1.520381', 'param': 'INS_ACC2OFFS_Z', 'value_2': '1.145575'}, {'value_1': '0.9976637', 'param': 'INS_ACC2SCAL_X', 'value_2': '1.024023'}, {'value_1': '1.020453', 'param': 'INS_ACC2SCAL_Y', 'value_2': '0.9885146'}, {'value_1': '1.031723', 'param': 'INS_ACC2SCAL_Z', 'value_2': '0.9975819'}, {'value_1': '0.02649689', 'param': 'INS_ACCOFFS_X', 'value_2': '0.06301928'}, {'value_1': '-0.07295302', 'param': 'INS_ACCOFFS_Y', 'value_2': '-0.08579227'}, {'value_1': '0.2703393', 'param': 'INS_ACCOFFS_Z', 'value_2': '-0.08076907'}, {'value_1': '0.9945849', 'param': 'INS_ACCSCAL_X', 'value_2': '1.000444'}, {'value_1': '0.995892', 'param': 'INS_ACCSCAL_Y', 'value_2': '0.9927809'}, {'value_1': '0.9860714', 'param': 'INS_ACCSCAL_Z', 'value_2': '0.9891868'}, {'value_1': '0.04033729', 'param': 'INS_GYR2OFFS_X', 'value_2': '0.1040769'}, {'value_1': '0.08219488', 'param': 'INS_GYR2OFFS_Y', 'value_2': '0.03026529'}, {'value_1': '-0.01973237', 'param': 'INS_GYR2OFFS_Z', 'value_2': '-0.02912711'}, {'value_1': '0.004865891', 'param': 'INS_GYROFFS_X', 'value_2': '0.01158665'}, {'value_1': '0.04935496', 'param': 'INS_GYROFFS_Y', 'value_2': '-0.02250979'}, {'value_1': '0.01769129', 'param': 'INS_GYROFFS_Z', 'value_2': '-0.02678636'}, {'value_1': '0', 'param': 'LOG_BITMASK', 'value_2': '176126'}, {'value_1': '8', 'param': 'MIS_TOTAL', 'value_2': '20'}, {'value_1': '0.01', 'param': 'RATE_PIT_D', 'value_2': '0.0125'}, {'value_1': '0.25', 'param': 'RATE_PIT_I', 'value_2': '0.2'}, {'value_1': '0.3', 'param': 'RATE_PIT_P', 'value_2': '0.2'}, {'value_1': '0.01', 'param': 'RATE_RLL_D', 'value_2': '0.013'}, {'value_1': '0.25', 'param': 'RATE_RLL_I', 'value_2': '0.235'}, {'value_1': '0.3', 'param': 'RATE_RLL_P', 'value_2': '0.235'}, {'value_1': '0.02', 'param': 'RATE_YAW_I', 'value_2': '0.1216'}, {'value_1': '0.2', 'param': 'RATE_YAW_P', 'value_2': '1.216'}, {'value_1': '10', 'param': 'RC12_FUNCTION', 'value_2': '0'}, {'value_1': '1900', 'param': 'RC12_MAX', 'value_2': '2100'}, {'value_1': '1934', 'param': 'RC1_MAX', 'value_2': '1924'}, {'value_1': '1094', 'param': 'RC1_MIN', 'value_2': '1104'}, {'value_1': '1514', 'param': 'RC1_TRIM', 'value_2': '1512'}, {'value_1': '1916', 'param': 'RC2_MAX', 'value_2': '1924'}, {'value_1': '1094', 'param': 'RC2_MIN', 'value_2': '1104'}, {'value_1': '1515', 'param': 'RC2_TRIM', 'value_2': '1518'}, {'value_1': '0', 'param': 'RC3_DZ', 'value_2': '30'}, {'value_1': '1934', 'param': 'RC3_MAX', 'value_2': '1924'}, {'value_1': '1094', 'param': 'RC3_MIN', 'value_2': '1100'}, {'value_1': '1094', 'param': 'RC3_TRIM', 'value_2': '1104'}, {'value_1': '1934', 'param': 'RC4_MAX', 'value_2': '1924'}, {'value_1': '1094', 'param': 'RC4_MIN', 'value_2': '1104'}, {'value_1': '1515', 'param': 'RC4_TRIM', 'value_2': '1514'}, {'value_1': '2081', 'param': 'RC5_MAX', 'value_2': '2114'}, {'value_1': '1111', 'param': 'RC5_MIN', 'value_2': '914'}, {'value_1': '1111', 'param': 'RC5_TRIM', 'value_2': '914'}, {'value_1': '1934', 'param': 'RC6_MAX', 'value_2': '2064'}, {'value_1': '1100', 'param': 'RC6_MIN', 'value_2': '964'}, {'value_1': '1100', 'param': 'RC6_TRIM', 'value_2': '1480'}, {'value_1': '1934', 'param': 'RC7_MAX', 'value_2': '2064'}, {'value_1': '1094', 'param': 'RC7_MIN', 'value_2': '964'}, {'value_1': '1487', 'param': 'RC7_TRIM', 'value_2': '964'}, {'value_1': '1934', 'param': 'RC8_MAX', 'value_2': '2064'}, {'value_1': '1094', 'param': 'RC8_MIN', 'value_2': '964'}, {'value_1': '1094', 'param': 'RC8_TRIM', 'value_2': '1514'}, {'value_1': '10', 'param': 'RC9_FUNCTION', 'value_2': '0'}, {'value_1': '2000', 'param': 'RC9_MAX', 'value_2': '1900'}, {'value_1': '6', 'param': 'RCMAP_THROTTLE', 'value_2': '3'}, {'value_1': '-', 'param': 'RNGFND2_ADDR', 'value_2': '0'}, {'value_1': '-', 'param': 'RNGFND_ADDR', 'value_2': '0'}, {'value_1': '1500', 'param': 'RTL_ALT', 'value_2': '3100'}, {'value_1': '2', 'param': 'SR0_EXTRA1', 'value_2': '0'}, {'value_1': '2', 'param': 'SR0_EXTRA2', 'value_2': '0'}, {'value_1': '5', 'param': 'SR2_EXTRA1', 'value_2': '2'}, {'value_1': '3', 'param': 'SR2_EXTRA3', 'value_2': '2'}, {'value_1': '2', 'param': 'SR2_RAW_CTRL', 'value_2': '0'}, {'value_1': '3.5', 'param': 'STB_PIT_P', 'value_2': '4.211'}, {'value_1': '3.5', 'param': 'STB_RLL_P', 'value_2': '5.657'}, {'value_1': '3.5', 'param': 'STB_YAW_P', 'value_2': '6.236784'}, {'value_1': '500', 'param': 'WPNAV_RADIUS', 'value_2': '3000'}, {'value_1': '500', 'param': 'WPNAV_SPEED', 'value_2': '800'}]
+            });
+
+            var data = $('#compare_table > tbody  > tr');
+            data[0].className = "MyClass";
+            $(data[0]).css('background-color', '#d8cbcb');
+
+            data.each(function (i, tr) {
+                //$(tr.lastChild).css('background-color', '#acee3b');
+                if (i != 0)
+                    if (tr.firstChild.innerHTML.split("_")[0] != this.previousSibling.firstChild.innerHTML.split("_")[0])
+                    {
+                        this.className = "MyClass";
+                        $(tr).css('background-color', '#d8cbcb');
+                        var newItem = document.createElement("span");       // Create a <li> node
+                        var textnode = document.createTextNode("+");  // Create a text node
+                        newItem.appendChild(textnode);                    // Append the text to <li>
+                        //console.log(this.firstChild.firstChild);
+                        this.firstChild.innerHTML = "+" + this.firstChild.innerHTML; //nie dzialaA?!?!?! szkodiz
+                    }
+            });*/
+
+             $(document).ready(function() {
+               var $compare_table = $("#compare_table");
+               $compare_table.bootstrapTable({
+                   data: [{'value_1': '1', 'param': 'AHRS_GPS_GAIN', 'value_2': '0.7'}, {'value_1': '0.2', 'param': 'AHRS_RP_P', 'value_2': '0.1'}, {'value_1': '-0.008072854', 'param': 'AHRS_TRIM_X', 'value_2': '0.01888398'}, {'value_1': '0.02213349', 'param': 'AHRS_TRIM_Y', 'value_2': '-0.0230498'}, {'value_1': '1', 'param': 'ARMING_CHECK', 'value_2': '0'}, {'value_1': '110000', 'param': 'ATC_ACCEL_P_MAX', 'value_2': '36000'}, {'value_1': '110000', 'param': 'ATC_ACCEL_R_MAX', 'value_2': '37031.61'}, {'value_1': '27000', 'param': 'ATC_ACCEL_Y_MAX', 'value_2': '13973.37'}, {'value_1': '-', 'param': 'ATC_ANGLE_BOOST', 'value_2': '1'}, {'value_1': '-1', 'param': 'BATT2_CURR_PIN', 'value_2': '3'}, {'value_1': '-1', 'param': 'BATT2_VOLT_PIN', 'value_2': '2'}, {'value_1': '18.0018', 'param': 'BATT_AMP_PERVOLT', 'value_2': '54.64481'}, {'value_1': '21000', 'param': 'BATT_CAPACITY', 'value_2': '20000'}, {'value_1': '3', 'param': 'BATT_MONITOR', 'value_2': '4'}, {'value_1': '10.13064', 'param': 'BATT_VOLT_MULT', 'value_2': '15.70105'}, {'value_1': '5', 'param': 'CAM_DURATION', 'value_2': '3'}, {'value_1': '2000', 'param': 'CAM_SERVO_ON', 'value_2': '2100'}, {'value_1': '0', 'param': 'CAM_TRIGG_DIST', 'value_2': '20'}, {'value_1': '0', 'param': 'CAM_TRIGG_TYPE', 'value_2': '1'}, {'value_1': '0', 'param': 'CH7_OPT', 'value_2': '29'}, {'value_1': '29', 'param': 'CH8_OPT', 'value_2': '0'}, {'value_1': '0', 'param': 'COMPASS_DEC', 'value_2': '0.06950384'}, {'value_1': '-30', 'param': 'COMPASS_OFS2_X', 'value_2': '59'}, {'value_1': '231', 'param': 'COMPASS_OFS2_Y', 'value_2': '304'}, {'value_1': '264', 'param': 'COMPASS_OFS2_Z', 'value_2': '16'}, {'value_1': '-122.9823', 'param': 'COMPASS_OFS_X', 'value_2': '-97'}, {'value_1': '20.06117', 'param': 'COMPASS_OFS_Y', 'value_2': '0'}, {'value_1': '22.19551', 'param': 'COMPASS_OFS_Z', 'value_2': '2'}, {'value_1': '2', 'param': 'FLTMODE2', 'value_2': '3'}, {'value_1': '3', 'param': 'FLTMODE3', 'value_2': '2'}, {'value_1': '0', 'param': 'FLTMODE4', 'value_2': '5'}, {'value_1': '5', 'param': 'FLTMODE5', 'value_2': '0'}, {'value_1': '0', 'param': 'FS_BATT_ENABLE', 'value_2': '2'}, {'value_1': '0', 'param': 'FS_BATT_VOLTAGE', 'value_2': '20.8'}, {'value_1': '1', 'param': 'FS_THR_ENABLE', 'value_2': '2'}, {'value_1': '99112.73', 'param': 'GND_ABS_PRESS', 'value_2': '97360.65'}, {'value_1': '29.84889', 'param': 'GND_TEMP', 'value_2': '13.48403'}, {'value_1': '0.3480362', 'param': 'INS_ACC2OFFS_X', 'value_2': '0.2435373'}, {'value_1': '0.01635239', 'param': 'INS_ACC2OFFS_Y', 'value_2': '-0.0302492'}, {'value_1': '1.520381', 'param': 'INS_ACC2OFFS_Z', 'value_2': '1.145575'}, {'value_1': '0.9976637', 'param': 'INS_ACC2SCAL_X', 'value_2': '1.024023'}, {'value_1': '1.020453', 'param': 'INS_ACC2SCAL_Y', 'value_2': '0.9885146'}, {'value_1': '1.031723', 'param': 'INS_ACC2SCAL_Z', 'value_2': '0.9975819'}, {'value_1': '0.02649689', 'param': 'INS_ACCOFFS_X', 'value_2': '0.06301928'}, {'value_1': '-0.07295302', 'param': 'INS_ACCOFFS_Y', 'value_2': '-0.08579227'}, {'value_1': '0.2703393', 'param': 'INS_ACCOFFS_Z', 'value_2': '-0.08076907'}, {'value_1': '0.9945849', 'param': 'INS_ACCSCAL_X', 'value_2': '1.000444'}, {'value_1': '0.995892', 'param': 'INS_ACCSCAL_Y', 'value_2': '0.9927809'}, {'value_1': '0.9860714', 'param': 'INS_ACCSCAL_Z', 'value_2': '0.9891868'}, {'value_1': '0.04033729', 'param': 'INS_GYR2OFFS_X', 'value_2': '0.1040769'}, {'value_1': '0.08219488', 'param': 'INS_GYR2OFFS_Y', 'value_2': '0.03026529'}, {'value_1': '-0.01973237', 'param': 'INS_GYR2OFFS_Z', 'value_2': '-0.02912711'}, {'value_1': '0.004865891', 'param': 'INS_GYROFFS_X', 'value_2': '0.01158665'}, {'value_1': '0.04935496', 'param': 'INS_GYROFFS_Y', 'value_2': '-0.02250979'}, {'value_1': '0.01769129', 'param': 'INS_GYROFFS_Z', 'value_2': '-0.02678636'}, {'value_1': '0', 'param': 'LOG_BITMASK', 'value_2': '176126'}, {'value_1': '8', 'param': 'MIS_TOTAL', 'value_2': '20'}, {'value_1': '0.01', 'param': 'RATE_PIT_D', 'value_2': '0.0125'}, {'value_1': '0.25', 'param': 'RATE_PIT_I', 'value_2': '0.2'}, {'value_1': '0.3', 'param': 'RATE_PIT_P', 'value_2': '0.2'}, {'value_1': '0.01', 'param': 'RATE_RLL_D', 'value_2': '0.013'}, {'value_1': '0.25', 'param': 'RATE_RLL_I', 'value_2': '0.235'}, {'value_1': '0.3', 'param': 'RATE_RLL_P', 'value_2': '0.235'}, {'value_1': '0.02', 'param': 'RATE_YAW_I', 'value_2': '0.1216'}, {'value_1': '0.2', 'param': 'RATE_YAW_P', 'value_2': '1.216'}, {'value_1': '10', 'param': 'RC12_FUNCTION', 'value_2': '0'}, {'value_1': '1900', 'param': 'RC12_MAX', 'value_2': '2100'}, {'value_1': '1934', 'param': 'RC1_MAX', 'value_2': '1924'}, {'value_1': '1094', 'param': 'RC1_MIN', 'value_2': '1104'}, {'value_1': '1514', 'param': 'RC1_TRIM', 'value_2': '1512'}, {'value_1': '1916', 'param': 'RC2_MAX', 'value_2': '1924'}, {'value_1': '1094', 'param': 'RC2_MIN', 'value_2': '1104'}, {'value_1': '1515', 'param': 'RC2_TRIM', 'value_2': '1518'}, {'value_1': '0', 'param': 'RC3_DZ', 'value_2': '30'}, {'value_1': '1934', 'param': 'RC3_MAX', 'value_2': '1924'}, {'value_1': '1094', 'param': 'RC3_MIN', 'value_2': '1100'}, {'value_1': '1094', 'param': 'RC3_TRIM', 'value_2': '1104'}, {'value_1': '1934', 'param': 'RC4_MAX', 'value_2': '1924'}, {'value_1': '1094', 'param': 'RC4_MIN', 'value_2': '1104'}, {'value_1': '1515', 'param': 'RC4_TRIM', 'value_2': '1514'}, {'value_1': '2081', 'param': 'RC5_MAX', 'value_2': '2114'}, {'value_1': '1111', 'param': 'RC5_MIN', 'value_2': '914'}, {'value_1': '1111', 'param': 'RC5_TRIM', 'value_2': '914'}, {'value_1': '1934', 'param': 'RC6_MAX', 'value_2': '2064'}, {'value_1': '1100', 'param': 'RC6_MIN', 'value_2': '964'}, {'value_1': '1100', 'param': 'RC6_TRIM', 'value_2': '1480'}, {'value_1': '1934', 'param': 'RC7_MAX', 'value_2': '2064'}, {'value_1': '1094', 'param': 'RC7_MIN', 'value_2': '964'}, {'value_1': '1487', 'param': 'RC7_TRIM', 'value_2': '964'}, {'value_1': '1934', 'param': 'RC8_MAX', 'value_2': '2064'}, {'value_1': '1094', 'param': 'RC8_MIN', 'value_2': '964'}, {'value_1': '1094', 'param': 'RC8_TRIM', 'value_2': '1514'}, {'value_1': '10', 'param': 'RC9_FUNCTION', 'value_2': '0'}, {'value_1': '2000', 'param': 'RC9_MAX', 'value_2': '1900'}, {'value_1': '6', 'param': 'RCMAP_THROTTLE', 'value_2': '3'}, {'value_1': '-', 'param': 'RNGFND2_ADDR', 'value_2': '0'}, {'value_1': '-', 'param': 'RNGFND_ADDR', 'value_2': '0'}, {'value_1': '1500', 'param': 'RTL_ALT', 'value_2': '3100'}, {'value_1': '2', 'param': 'SR0_EXTRA1', 'value_2': '0'}, {'value_1': '2', 'param': 'SR0_EXTRA2', 'value_2': '0'}, {'value_1': '5', 'param': 'SR2_EXTRA1', 'value_2': '2'}, {'value_1': '3', 'param': 'SR2_EXTRA3', 'value_2': '2'}, {'value_1': '2', 'param': 'SR2_RAW_CTRL', 'value_2': '0'}, {'value_1': '3.5', 'param': 'STB_PIT_P', 'value_2': '4.211'}, {'value_1': '3.5', 'param': 'STB_RLL_P', 'value_2': '5.657'}, {'value_1': '3.5', 'param': 'STB_YAW_P', 'value_2': '6.236784'}, {'value_1': '500', 'param': 'WPNAV_RADIUS', 'value_2': '3000'}, {'value_1': '500', 'param': 'WPNAV_SPEED', 'value_2': '800'}]
+               });
+
+               
+               var data = $('#compare_table').find('tr'); 
+               
+               data.each(function (iter, elem) {
+                 if(iter != 0) {
+                    if($(data[iter]).children(':first').text().split('_')[0] != $(data[iter-1]).children(':first').text().split('_')[0]) {
+                        $(this).addClass('MyClass');
+                        $(elem).css('background-color', '#d8cbcb');
+                    }
+                    //else
+                    //{
+                        //var val = $(this).children(':first').html();
+                        //$(this).children(':first').html(val.substring(1, val.length));
+                    //}
+
+                 }
+               });
+            /*var valek = $(".MyClass").html();
+            $(".MyClass").html(valek.append("+");*/
+
+            $("tr:not(.MyClass)").show();
+            $(".MyClass").each(function (i, tr) {
+                //console.log(this.css('background-color', '#acee3b'));
+                this.addEventListener("click", function(){ 
+                    $(this).nextUntil('tr.MyClass').slideToggle(100);
+                    var val = $(this).children(':first').html();
+                    //if(val[0] == "+")
+                    //    $(this).children(':first').html(val.replace("+", "-"));
+                    //else
+                    //    $(this).children(':first').html(val.replace("-", "+"));
+                 });
+                //tr.css('background-color', '#afaa3b');
+                //this.nextUntil('tr.MyClass').slideToggle(100);
+            });
+/*                
+            });
+
+            
+            
+            
+
+            $compare_table.on('click-cell.bs.table', function (e, col_name, value, data, $element) {
+                if (col_name != 'param') {
+                    $($element[0].parentNode.childNodes).each(function (i, td) {
+                        $(td).css('background-color', '')
+                    });
+                    var $form = $('#params_to_send');
+                    var $inputs = $form.children('input[name="' + $element[0].parentNode.firstChild.textContent + '"]');
+                    if ($inputs.length) {
+                        $($inputs[0]).val(value);
+
+                    }
+                    else {
+                        $form.append('<input type="hidden" name="' + $element[0].parentNode.firstChild.textContent + '" value="' + value + '" />');
+                    }
+                    $($element[0]).css('background-color', '#acee3b');
+                    
+                }
+            })*/
+        });
+        
+        function buttonClick() {
+            var f1 = $('#id_file1').val();
+            var f2 = $('#id_file2').val();
+            window.location.href = "/compare_products/3/4/" + f1 + "/" + f2
+        }
+
+    </script>
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class="">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="http://127.0.0.1:8000/admin/">ERP Administration</a></h1>
+
+        </div>
+        
+        
+        
+        
+    </div>
+    <!-- END Header -->
+    
+    <div class="breadcrumbs">
+    <a href="http://127.0.0.1:8000/admin/">Home</a>
+     › Compare params
+    </div>
+    
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="colM">
+        
+        <h1>Compare params</h1>
+        
+    <div id="select_file">
+        <p><label for="id_file1">File1:</label> <select id="id_file1" name="file1">
+<option value="0" selected="selected">499_s1000_params_v16_serwis2.param2017-01-17-12-37-0</option>
+</select></p>
+<p><label for="id_file2">File2:</label> <select id="id_file2" name="file2">
+<option value="0" selected="selected">params_v5.param2017-01-17-12-51-52</option>
+</select></p>
+        <button class="btn btn-info" onclick="buttonClick()">Go</button>
+    </div>
+    <div class="bootstrap-table"><div class="fixed-table-toolbar"></div><div class="fixed-table-container" style="padding-bottom: 0px;"><div class="fixed-table-header" style="display: none;"><table></table></div><div class="fixed-table-body"><div class="fixed-table-loading" style="top: 41px;">Loading, please wait...</div><table id="compare_table" data-search="false" class="table table-hover table-condensed table-striped table-responsive" data-undefined-text="">
+        <thead><tr><th style="" data-field="param" tabindex="0"><div class="th-inner ">Param</div><div class="fht-cell"></div></th><th style="" data-field="value_1" tabindex="0"><div class="th-inner ">GRYF 499</div><div class="fht-cell"></div></th><th style="" data-field="value_2" tabindex="0"><div class="th-inner ">GRYF 498</div><div class="fht-cell"></div></th></tr></thead>
+    <tbody><tr data-index="0" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">AHRS_GPS_GAIN</td><td style="">1</td><td style="">0.7</td></tr><tr data-index="1"><td style="">AHRS_RP_P</td><td style="">0.2</td><td style="">0.1</td></tr><tr data-index="2"><td style="">AHRS_TRIM_X</td><td style="">-0.008072854</td><td style="">0.01888398</td></tr><tr data-index="3"><td style="">AHRS_TRIM_Y</td><td style="">0.02213349</td><td style="">-0.0230498</td></tr><tr data-index="4" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">ARMING_CHECK</td><td style="">1</td><td style="">0</td></tr><tr data-index="5" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">ATC_ACCEL_P_MAX</td><td style="">110000</td><td style="">36000</td></tr><tr data-index="6"><td style="">ATC_ACCEL_R_MAX</td><td style="">110000</td><td style="">37031.61</td></tr><tr data-index="7"><td style="">ATC_ACCEL_Y_MAX</td><td style="">27000</td><td style="">13973.37</td></tr><tr data-index="8"><td style="">ATC_ANGLE_BOOST</td><td style="">-</td><td style="">1</td></tr><tr data-index="9" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">BATT2_CURR_PIN</td><td style="">-1</td><td style="">3</td></tr><tr data-index="10"><td style="">BATT2_VOLT_PIN</td><td style="">-1</td><td style="">2</td></tr><tr data-index="11" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">BATT_AMP_PERVOLT</td><td style="">18.0018</td><td style="">54.64481</td></tr><tr data-index="12"><td style="">BATT_CAPACITY</td><td style="">21000</td><td style="">20000</td></tr><tr data-index="13"><td style="">BATT_MONITOR</td><td style="">3</td><td style="">4</td></tr><tr data-index="14"><td style="">BATT_VOLT_MULT</td><td style="">10.13064</td><td style="">15.70105</td></tr><tr data-index="15" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">CAM_DURATION</td><td style="">5</td><td style="">3</td></tr><tr data-index="16"><td style="">CAM_SERVO_ON</td><td style="">2000</td><td style="">2100</td></tr><tr data-index="17"><td style="">CAM_TRIGG_DIST</td><td style="">0</td><td style="">20</td></tr><tr data-index="18"><td style="">CAM_TRIGG_TYPE</td><td style="">0</td><td style="">1</td></tr><tr data-index="19" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">CH7_OPT</td><td style="">0</td><td style="">29</td></tr><tr data-index="20" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">CH8_OPT</td><td style="">29</td><td style="">0</td></tr><tr data-index="21" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">COMPASS_DEC</td><td style="">0</td><td style="">0.06950384</td></tr><tr data-index="22"><td style="">COMPASS_OFS2_X</td><td style="">-30</td><td style="">59</td></tr><tr data-index="23"><td style="">COMPASS_OFS2_Y</td><td style="">231</td><td style="">304</td></tr><tr data-index="24"><td style="">COMPASS_OFS2_Z</td><td style="">264</td><td style="">16</td></tr><tr data-index="25"><td style="">COMPASS_OFS_X</td><td style="">-122.9823</td><td style="">-97</td></tr><tr data-index="26"><td style="">COMPASS_OFS_Y</td><td style="">20.06117</td><td style="">0</td></tr><tr data-index="27"><td style="">COMPASS_OFS_Z</td><td style="">22.19551</td><td style="">2</td></tr><tr data-index="28" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">FLTMODE2</td><td style="">2</td><td style="">3</td></tr><tr data-index="29" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">FLTMODE3</td><td style="">3</td><td style="">2</td></tr><tr data-index="30" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">FLTMODE4</td><td style="">0</td><td style="">5</td></tr><tr data-index="31" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">FLTMODE5</td><td style="">5</td><td style="">0</td></tr><tr data-index="32" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">FS_BATT_ENABLE</td><td style="">0</td><td style="">2</td></tr><tr data-index="33"><td style="">FS_BATT_VOLTAGE</td><td style="">0</td><td style="">20.8</td></tr><tr data-index="34"><td style="">FS_THR_ENABLE</td><td style="">1</td><td style="">2</td></tr><tr data-index="35" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">GND_ABS_PRESS</td><td style="">99112.73</td><td style="">97360.65</td></tr><tr data-index="36"><td style="">GND_TEMP</td><td style="">29.84889</td><td style="">13.48403</td></tr><tr data-index="37" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">INS_ACC2OFFS_X</td><td style="">0.3480362</td><td style="">0.2435373</td></tr><tr data-index="38"><td style="">INS_ACC2OFFS_Y</td><td style="">0.01635239</td><td style="">-0.0302492</td></tr><tr data-index="39"><td style="">INS_ACC2OFFS_Z</td><td style="">1.520381</td><td style="">1.145575</td></tr><tr data-index="40"><td style="">INS_ACC2SCAL_X</td><td style="">0.9976637</td><td style="">1.024023</td></tr><tr data-index="41"><td style="">INS_ACC2SCAL_Y</td><td style="">1.020453</td><td style="">0.9885146</td></tr><tr data-index="42"><td style="">INS_ACC2SCAL_Z</td><td style="">1.031723</td><td style="">0.9975819</td></tr><tr data-index="43"><td style="">INS_ACCOFFS_X</td><td style="">0.02649689</td><td style="">0.06301928</td></tr><tr data-index="44"><td style="">INS_ACCOFFS_Y</td><td style="">-0.07295302</td><td style="">-0.08579227</td></tr><tr data-index="45"><td style="">INS_ACCOFFS_Z</td><td style="">0.2703393</td><td style="">-0.08076907</td></tr><tr data-index="46"><td style="">INS_ACCSCAL_X</td><td style="">0.9945849</td><td style="">1.000444</td></tr><tr data-index="47"><td style="">INS_ACCSCAL_Y</td><td style="">0.995892</td><td style="">0.9927809</td></tr><tr data-index="48"><td style="">INS_ACCSCAL_Z</td><td style="">0.9860714</td><td style="">0.9891868</td></tr><tr data-index="49"><td style="">INS_GYR2OFFS_X</td><td style="">0.04033729</td><td style="">0.1040769</td></tr><tr data-index="50"><td style="">INS_GYR2OFFS_Y</td><td style="">0.08219488</td><td style="">0.03026529</td></tr><tr data-index="51"><td style="">INS_GYR2OFFS_Z</td><td style="">-0.01973237</td><td style="">-0.02912711</td></tr><tr data-index="52"><td style="">INS_GYROFFS_X</td><td style="">0.004865891</td><td style="">0.01158665</td></tr><tr data-index="53"><td style="">INS_GYROFFS_Y</td><td style="">0.04935496</td><td style="">-0.02250979</td></tr><tr data-index="54"><td style="">INS_GYROFFS_Z</td><td style="">0.01769129</td><td style="">-0.02678636</td></tr><tr data-index="55" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">LOG_BITMASK</td><td style="">0</td><td style="">176126</td></tr><tr data-index="56" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">MIS_TOTAL</td><td style="">8</td><td style="">20</td></tr><tr data-index="57" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RATE_PIT_D</td><td style="">0.01</td><td style="">0.0125</td></tr><tr data-index="58"><td style="">RATE_PIT_I</td><td style="">0.25</td><td style="">0.2</td></tr><tr data-index="59"><td style="">RATE_PIT_P</td><td style="">0.3</td><td style="">0.2</td></tr><tr data-index="60"><td style="">RATE_RLL_D</td><td style="">0.01</td><td style="">0.013</td></tr><tr data-index="61"><td style="">RATE_RLL_I</td><td style="">0.25</td><td style="">0.235</td></tr><tr data-index="62"><td style="">RATE_RLL_P</td><td style="">0.3</td><td style="">0.235</td></tr><tr data-index="63"><td style="">RATE_YAW_I</td><td style="">0.02</td><td style="">0.1216</td></tr><tr data-index="64"><td style="">RATE_YAW_P</td><td style="">0.2</td><td style="">1.216</td></tr><tr data-index="65" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC12_FUNCTION</td><td style="">10</td><td style="">0</td></tr><tr data-index="66"><td style="">RC12_MAX</td><td style="">1900</td><td style="">2100</td></tr><tr data-index="67" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC1_MAX</td><td style="">1934</td><td style="">1924</td></tr><tr data-index="68"><td style="">RC1_MIN</td><td style="">1094</td><td style="">1104</td></tr><tr data-index="69"><td style="">RC1_TRIM</td><td style="">1514</td><td style="">1512</td></tr><tr data-index="70" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC2_MAX</td><td style="">1916</td><td style="">1924</td></tr><tr data-index="71"><td style="">RC2_MIN</td><td style="">1094</td><td style="">1104</td></tr><tr data-index="72"><td style="">RC2_TRIM</td><td style="">1515</td><td style="">1518</td></tr><tr data-index="73" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC3_DZ</td><td style="">0</td><td style="">30</td></tr><tr data-index="74"><td style="">RC3_MAX</td><td style="">1934</td><td style="">1924</td></tr><tr data-index="75"><td style="">RC3_MIN</td><td style="">1094</td><td style="">1100</td></tr><tr data-index="76"><td style="">RC3_TRIM</td><td style="">1094</td><td style="">1104</td></tr><tr data-index="77" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC4_MAX</td><td style="">1934</td><td style="">1924</td></tr><tr data-index="78"><td style="">RC4_MIN</td><td style="">1094</td><td style="">1104</td></tr><tr data-index="79"><td style="">RC4_TRIM</td><td style="">1515</td><td style="">1514</td></tr><tr data-index="80" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC5_MAX</td><td style="">2081</td><td style="">2114</td></tr><tr data-index="81"><td style="">RC5_MIN</td><td style="">1111</td><td style="">914</td></tr><tr data-index="82"><td style="">RC5_TRIM</td><td style="">1111</td><td style="">914</td></tr><tr data-index="83" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC6_MAX</td><td style="">1934</td><td style="">2064</td></tr><tr data-index="84"><td style="">RC6_MIN</td><td style="">1100</td><td style="">964</td></tr><tr data-index="85"><td style="">RC6_TRIM</td><td style="">1100</td><td style="">1480</td></tr><tr data-index="86" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC7_MAX</td><td style="">1934</td><td style="">2064</td></tr><tr data-index="87"><td style="">RC7_MIN</td><td style="">1094</td><td style="">964</td></tr><tr data-index="88"><td style="">RC7_TRIM</td><td style="">1487</td><td style="">964</td></tr><tr data-index="89" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC8_MAX</td><td style="">1934</td><td style="">2064</td></tr><tr data-index="90"><td style="">RC8_MIN</td><td style="">1094</td><td style="">964</td></tr><tr data-index="91"><td style="">RC8_TRIM</td><td style="">1094</td><td style="">1514</td></tr><tr data-index="92" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RC9_FUNCTION</td><td style="">10</td><td style="">0</td></tr><tr data-index="93"><td style="">RC9_MAX</td><td style="">2000</td><td style="">1900</td></tr><tr data-index="94" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RCMAP_THROTTLE</td><td style="">6</td><td style="">3</td></tr><tr data-index="95" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RNGFND2_ADDR</td><td style="">-</td><td style="">0</td></tr><tr data-index="96" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RNGFND_ADDR</td><td style="">-</td><td style="">0</td></tr><tr data-index="97" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">RTL_ALT</td><td style="">1500</td><td style="">3100</td></tr><tr data-index="98" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">SR0_EXTRA1</td><td style="">2</td><td style="">0</td></tr><tr data-index="99"><td style="">SR0_EXTRA2</td><td style="">2</td><td style="">0</td></tr><tr data-index="100" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">SR2_EXTRA1</td><td style="">5</td><td style="">2</td></tr><tr data-index="101"><td style="">SR2_EXTRA3</td><td style="">3</td><td style="">2</td></tr><tr data-index="102"><td style="">SR2_RAW_CTRL</td><td style="">2</td><td style="">0</td></tr><tr data-index="103" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">STB_PIT_P</td><td style="">3.5</td><td style="">4.211</td></tr><tr data-index="104"><td style="">STB_RLL_P</td><td style="">3.5</td><td style="">5.657</td></tr><tr data-index="105"><td style="">STB_YAW_P</td><td style="">3.5</td><td style="">6.236784</td></tr><tr data-index="106" class="MyClass" style="background-color: rgb(216, 203, 203);"><td style="">WPNAV_RADIUS</td><td style="">500</td><td style="">3000</td></tr><tr data-index="107"><td style="">WPNAV_SPEED</td><td style="">500</td><td style="">800</td></tr></tbody></table></div><div class="fixed-table-footer" style="display: none;"><table><tbody><tr></tr></tbody></table></div><div class="fixed-table-pagination" style="display: none;"></div></div></div><div class="clearfix"></div>
+    <form id="params_to_send" action="http://127.0.0.1:8000/download_params/4/0" method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="dsglexxsRBe0bc43z8kWPZQsnfG8PF2T">
+        <input type="submit" value="Download Params">
+    </form>
+
+
+        
+        <br class="clear">
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+
+
+</body></html>
